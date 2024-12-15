@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Tic-Tac-Toe</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Tic Tac Toe</h1>
+    <div class="mode-buttons">
+      <button onclick="selectMode('human')">Play with Human</button>
+      <button onclick="selectMode('ai')">Play with AI</button>
+    </div>
+    <div id="result"></div>
+    <div class="board" id="board"></div>
+  </div>
+
+  <!-- Popup for choosing X or O -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <h2>Choose Your Symbol</h2>
+      <button onclick="chooseSymbol('X')">X</button>
+      <button onclick="chooseSymbol('O')">O</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
